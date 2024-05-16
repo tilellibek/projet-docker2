@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <!-- font awesome cdn link-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+   <!-- css style -->
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'infos/css/style.css' %}">
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+   
+<!-- header -->
+
+<header class="header">
+
+   <a href="{% url 'home' %}" class="logo"> <i class="fas fa-brain"></i> Academix </a>
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'formations' %}">Courses</a>
+      <a href="{% url 'contact' %}">Contact</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="light-btn" class="fas fa-sun"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- login and register form  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+{% block content %}
+
+{% endblock %} 
+
+<!-- footer -->
+<section class="footer">
+
+    <div class="box-container">
+ 
+       <div class="box">
+          <h3> <i class="fas fa-brain"></i> Academix </h3>
+          <p>Explore our world-class educational programs designed to empower your career in the modern workforce.</p>
+          <div class="share">
+             <a href="#" class="fab fa-facebook-f"></a>
+             <a href="#" class="fab fa-twitter"></a>
+             <a href="#" class="fab fa-instagram"></a>
+             <a href="#" class="fab fa-linkedin"></a>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <h3>quick links</h3>
+          <a href="{% url 'home' %}" class="link">Home</a>
+          <a href="{% url 'about' %}" class="link">About</a>
+          <a href="{% url 'formations' %}" class="link">Courses</a>
+          <a href="{% url 'contact' %}" class="link">Contact</a>
+       </div>
+ 
+       <div class="box">
+          <h3>useful links</h3>
+          <a href="#" class="link">help center</a>
+          <a href="#" class="link">ask questions</a>
+          <a href="#" class="link">send feedback</a>
+          <a href="#" class="link">private policy</a>
+          <a href="#" class="link">terms of use</a>
+       </div>
+ 
+       <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest upadates</p>
+          <form action="">
+             <input type="email" name="" placeholder="enter your email" id="" class="email">
+             <input type="submit" value="subscribe" class="btn">
+          </form>
+       </div>
+ 
+    </div>
+ 
+    <div class="credit"> created by <span>Team Academix</span> | all rights reserved! </div>
+ 
+ </section>
+ 
+ 
+ <!-- swiper js link  -->
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+ 
+ <!-- custom js file link  -->
+ <script src="{% static 'infos/js/script.js' %}"></script>
+ 
+ </body>
+</html>

@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: academix-virtual
+  namespace: production
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - academix-gateway
+  http:
+    - match:
+        - uri:
+            prefix: "/"
+      route:
+        - destination:
+            host: academix-service.production.svc.cluster.local
+            port:
+              number: 8000

@@ -1,0 +1,263 @@
+{% extends 'infos/header.html' %}
+
+
+{% block content %}
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<section class="heading-link">
+   <h3>about us</h3>
+   <p> <a href="{% url 'home' %}">home</a> > about </p>
+</section>
+
+<!-- about section starts  -->
+
+<section class="about">
+
+   {% load static %}
+   <div class="image">
+      <img src="{% static 'infos/img/about-img.jpg' %}" alt="">
+   </div>
+
+   <div class="content">
+      <h3 class="about-title">Committed to Excellent Education</h3>
+      <p>At Academix, we offer a diverse range of courses designed to enhance your skills and propel your career forward. Our focus is on delivering practical knowledge and skills that are highly demanded in today’s job market.</p>
+      <div class="icons-container">
+         <div class="icons">
+            <img src="{% static 'infos/img/about-icon-1.png' %}" alt="">
+            <h3>350+</h3>
+            <span>courses</span>
+         </div>
+         <div class="icons">
+            <img src="{% static 'infos/img/about-icon-2.png' %}" alt="">
+            <h3>1200+</h3>
+            <span>students</span>
+         </div>
+         <div class="icons">
+            <img src="{% static 'infos/img/about-icon-3.png' %}" alt="">
+            <h3>10+</h3>
+            <span>awards</span>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- teachers section starts  -->
+
+<section class="teachers">
+
+   <h1 class="heading">Meet Our Expert Instructors</h1>
+
+   <div class="swiper teachers-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/teacher-1.png' %}" alt="">
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>lamis ahmed</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/teacher-2.png' %}" alt="">
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>john deo</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/teacher-3.png' %}" alt="">
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>Anais Pierre</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/teacher-4.png' %}" alt="">
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>sara mang</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/teacher-5.png' %}" alt="">
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>francois dupon</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/teacher-6.png' %}" alt="">
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+            <div class="content">
+               <h3>elle jenner</h3>
+               <span>expert tutor</span>
+            </div>
+         </div>
+         
+      </div>
+      <div class="swiper-button-prev custom"></div>
+      <div class="swiper-button-next custom"></div>
+
+   </div>
+
+</section>
+
+<!-- teachers section ends -->
+
+<!-- students reviews section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading"> our students review </h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <p>This course has been a game-changer for my career. The hands-on approach was incredibly effective.</p>
+            <img src="{% static 'infos/img/pic-1.png' %}" alt="">
+            <h3>albert</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>The instructors are very knowledgeable and approachable. The course content is up-to-date and very relevant.</p>
+            <img src="{% static 'infos/img/pic-2.png' %}" alt="">
+            <h3>melissa</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Enrolling in this program was one of the best decisions I've made. The support from the community and staff is fantastic.</p>
+            <img src="{% static 'infos/img/pic-3.png' %}" alt="">
+            <h3>kevin</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>I've learned more in a few months here than I did in years at other institutions. Highly recommend their programs!</p>
+            <img src="{% static 'infos/img/pic-4.png' %}" alt="">
+            <h3>jennifer</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Great courses, flexible schedules, and a supportive environment. Perfect for working professionals looking to upskill.</p>
+            <img src="{% static 'infos/img/pic-5.png' %}" alt="">
+            <h3>raj</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Absolutely fantastic! The quality of instruction and the depth of knowledge shared are unmatched.</p>
+            <img src="{% static 'infos/img/pic-6.png' %}" alt="">
+            <h3>lisa</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+      </div>
+      <div class="swiper-button-prev custom"></div>
+      <div class="swiper-button-next custom"></div>
+
+   </div>
+
+</section>
+
+<!-- students reviews section ends -->
+
+{% endblock %}

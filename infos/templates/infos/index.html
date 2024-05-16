@@ -1,0 +1,192 @@
+{% extends 'infos/header.html' %}
+
+
+{% block content %}
+
+
+
+<!-- home swipper  -->
+
+<section class="home">
+
+   <div class="swiper home-slider">
+      
+      <div class="swiper-wrapper">
+
+         {% load static %}
+         <section class="swiper-slide slide" style="background: url('{% static 'infos/img/home-slide-1.jpg' %}') no-repeat;">
+            <div class="content">
+               <h3>Explore Our Top-Rated Courses</h3>
+               <p>Discover a range of courses designed to boost your career. From technology to business, learn from industry experts.</p>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url('{% static 'infos/img/home-slide-2.jpg' %}') no-repeat;">
+            <div class="content">
+               <h3>Advance Your Skills with Expert Training</h3>
+               <p>Join thousands who've elevated their skills with our specialized training programs. Start your learning journey today!</p>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url('{% static 'infos/img/home-slide-3.jpg' %}') no-repeat;">
+            <div class="content">
+               <h3>Unlock New Opportunities</h3>
+               <p>Enhance your professional profile with courses that lead you to top career paths. Enroll and start achieving your dreams!</p>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </section>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+
+<!-- popular subjects -->
+
+<section class="subjects">
+
+   <h1 class="heading">our popular subjects</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="{% static 'infos/img/subject-icon-1.png'%}" alt="">
+         <h3>graphic design</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="{% static 'infos/img/subject-icon-2.png' %}" alt="">
+         <h3>mathemetics</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="{% static 'infos/img/subject-icon-3.png' %}" alt="">
+         <h3>teaching</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="{% static 'infos/img/subject-icon-4.png' %}" alt="">
+         <h3>development</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="{% static 'infos/img/subject-icon-5.png' %}" alt="">
+         <h3>science</h3>
+         <p>12 modules</p>
+      </div>
+
+      <div class="box">
+         <img src="{% static 'infos/img/subject-icon-6.png' %}" alt="">
+         <h3>engineering</h3>
+         <p>12 modules</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- popular courses -->
+
+<section class="home-courses">
+
+   <h1 class="heading"> our popular courses </h1>
+
+   <div class="swiper home-courses-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/course-1-1.png' %}" alt="">
+               <h3>Web Development Essentials</h3>
+            </div>
+            <div class="content">
+               <h3>Web Development Essentials</h3>
+               <p>Master the fundamentals of web development with HTML, CSS, and JavaScript. Perfect for beginners.</p>
+               <p>Avis</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/course-1-2.png' %}" alt="">
+               <h3>Full-Stack JavaScript</h3>
+            </div>
+            <div class="content">
+               <h3>Full-Stack JavaScript</h3>
+               <p>Learn to build dynamic web applications from front to back using JavaScript and Node.js.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/course-1-3.png' %}" alt="">
+               <h3>React Development</h3>
+            </div>
+            <div class="content">
+               <h3>React Development</h3>
+               <p>Dive into React and learn how to build fast and reactive user interfaces for web applications.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/course-1-4.png' %}" alt="">
+               <h3>Advanced CSS Techniques</h3>
+            </div>
+            <div class="content">
+               <h3>Advanced CSS Techniques</h3>
+               <p>Enhance your CSS skills with advanced concepts that will help you create sophisticated designs.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/course-1-5.png' %}" alt="">
+               <h3>Backend Development with Django</h3>
+            </div>
+            <div class="content">
+               <h3>Backend Development with Django</h3>
+               <p>Learn how to build robust and scalable web applications using the Django framework.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="{% static 'infos/img/course-1-6.png' %}" alt="">
+               <h3>API Development</h3>
+            </div>
+            <div class="content">
+               <h3>API Development</h3>
+               <p>Understand the core principles of API development and learn how to integrate and secure APIs effectively.</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+      </div>
+      <div class="swiper-button-prev custom"></div>
+      <div class="swiper-button-next custom"></div>
+
+
+   </div>
+
+</section>
+
+
+{% endblock %} 
+

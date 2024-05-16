@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: academix-deployment
+  namespace: production  # This specifies the namespace
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: academix-service
+  template:
+    metadata:
+      labels:
+        app: academix-service
+    spec:
+      containers:
+        - image: pyzone49/academix_project:1
+          imagePullPolicy: IfNotPresent
+          name: academix-service
+          ports:
+            - containerPort: 8000
+      restartPolicy: Always
