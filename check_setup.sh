@@ -1,3 +1,4 @@
+clear
 kubectl get deployment -n production
 kubectl get pods -n production
 kubectl get svc -n production

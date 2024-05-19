@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-api-deployment
+  namespace: production
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-api
+  template:
+    metadata:
+      labels:
+        app: flask-api
+    spec:
+      containers:
+      - image: pyzone49/academix_api:2
+        name: flask-api
+        ports:
+        - containerPort: 5000
+        env:
+        - name: DATABASE_HOST
+          value: "mysql.production.svc.cluster.local"
+        - name: DATABASE_PORT
+          value: "3306"
+        - name: DATABASE_NAME
+          value: "academixdb"
+        - name: DATABASE_USER
+          value: "academixuser"
+        - name: DATABASE_PASSWORD
+          value: "academixpassword"
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-api-service
+  namespace: production
+spec:
+  selector:
+    app: flask-api
+  ports:
+  - protocol: TCP
+    port: 5000
+    targetPort: 5000

@@ -5,15 +5,66 @@ metadata:
   namespace: production
 spec:
   hosts:
-    - "*"
+  - "*"
   gateways:
-    - academix-gateway
+  - academix-gateway
   http:
-    - match:
-        - uri:
-            prefix: "/"
-      route:
-        - destination:
-            host: academix-service.production.svc.cluster.local
-            port:
-              number: 8000
+  - match:
+    - uri:
+        prefix: "/contact"
+    route:
+    - destination:
+        host: academix-service.production.svc.cluster.local
+        port:
+          number: 8000
+  - match:
+    - uri:
+        prefix: "/about"
+    route:
+    - destination:
+        host: academix-service.production.svc.cluster.local
+        port:
+          number: 8000
+  - match:
+    - uri:
+        prefix: "/formations"
+    route:
+    - destination:
+        host: academix-service.production.svc.cluster.local
+        port:
+          number: 8000
+  - match:
+    - uri:
+        prefix: "/admin"
+    route:
+    - destination:
+        host: academix-service.production.svc.cluster.local
+        port:
+          number: 8000
+  - match:
+    - uri:
+        prefix: "/home"
+      # Rewrite the request to /
+    rewrite:
+      uri: "/"
+    route:
+    - destination:
+        host: academix-service.production.svc.cluster.local
+        port:
+          number: 8000
+  - match:
+    - uri:
+        prefix: "/static"
+    route:
+    - destination:
+        host: academix-service.production.svc.cluster.local
+        port:
+          number: 8000
+  - match:
+    - uri:
+        prefix: "/data"
+    route:
+    - destination:
+        host: flask-api-service.production.svc.cluster.local
+        port:
+          number: 5000
