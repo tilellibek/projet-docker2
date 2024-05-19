@@ -3,7 +3,7 @@
   <p>Developed by <strong>Yacine FLICI</strong></p>
   <p>Developed by <strong>Tilelli Bektache</strong></p>
   <p>Contact: <a href="mailto:yacineflici2@gmail.com">yacineflici2@gmail.com</a>
-   <a href="mailto:yacineflici2@gmail.com">yacineflici2@gmail.com</a>
+   <a href="mailto:tilelli.bektache@etu.u-paris.fr">tilelli.bektache@etu.u-paris.fr</a>
   </p>
 </div>
 
