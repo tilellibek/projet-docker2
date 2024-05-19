@@ -1,16 +1,22 @@
-# Project README and Report
-
-## Project Overview
+<div align="left">
+  <h1>Academix Project</h1>
+  <p>Developed by <strong>Yacine FLICI</strong></p>
+  <p>Developed by <strong>Tilelli Bektache</strong></p>
+  <p>Contact: <a href="mailto:yacineflici2@gmail.com">yacineflici2@gmail.com</a>
+   <a href="mailto:yacineflici2@gmail.com">yacineflici2@gmail.com</a>
+  </p>
+</div>
 
 This project demonstrates the deployment of a web service using Docker, Kubernetes, and Istio for service mesh integration. The service is developed, containerized, and deployed on a Kubernetes cluster, followed by setting up a service mesh with Istio. This README provides a step-by-step guide to the project's implementation.
 
 ## Table of Contents
 1. [Project Setup](#project-setup)
-2. [Docker](#docker)
-3. [Kubernetes](#kubernetes)
-4. [Istio Service Mesh](#istio-service-mesh)
-5. [Final Steps](#final-steps)
-
+2. [Build the Docker Image and Run the Container](#2-build-the-docker-image-and-run-the-container)
+3. [Push the Docker Image to Docker Hub](#3-push-the-docker-image-to-docker-hub)
+4. [Create a Deployment and Service in Kubernetes](#4-create-a-deployment-and-service-in-kubernetes)
+5. [Create Gateway and Virtual Service for Istio](#5-create-gateway-and-virtual-service-for-istio)
+6. [Apply the Configuration Files and Verify the Deployments](#6-apply-the-configuration-files-and-verify-the-deployments)
+7. [Access the Web Service](#7-access-the-web-service)
 
 ## Project Setup
 ### 1. Start Minikube
